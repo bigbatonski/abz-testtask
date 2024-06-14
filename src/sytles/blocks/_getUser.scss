@@ -1,0 +1,22 @@
+.get_request {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+        &__grid {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 254px;
+                margin: 0 auto;
+                align-items: center;
+            }
+
+}
+
+.page_navigation {
+    display: flex;
+    gap: 50px;
+}

@@ -1,0 +1,30 @@
+:root {
+    //font
+    --primary-font: 'Nunito';
+    --font-size-regular: 16px;
+    --font-size-large: 40px;
+    --line-height-regular: 26px;
+    --line-height-large: 40px;
+    //colors
+    --primary-color: #F4E041;
+    --secondary-color: #00BDD3;
+    --body-bg-color: #f8f8f8;
+    --text-regular-black: rgba(0, 0, 0, 0.87);
+    //utils
+    --disabled-text: rgba(255, 255, 255, 0.87);
+    --disabled-color: #B4B4B4;
+    //border-radius
+    --regular-border-radius: 4px;
+    --large-border-radius: 80px;
+    
+    --section-margin: 140px;
+    --insection-margin: 50px;
+    --user-card-padding: 20px;
+    
+    --container-mobile: 328px;
+    --container-tablet: 704px;
+    --container-laptop: 904px;
+    --container-desktop: 1170px;
+
+
+}

@@ -1,0 +1,173 @@
+$desktop: 2560px;
+
+$laptop: 1024px;
+
+$tablet: 768px;
+
+$mobile: 360px;
+
+@media (max-width: $desktop) {
+    
+        .container {
+            max-width: var(--container-desktop) !important;
+            margin: 0 auto;
+            
+            
+              
+        }
+
+        .header {
+            max-width: var(--container-desktop) !important;
+            margin: 0 auto;
+        }
+
+        .banner {
+            height: 650px;
+            max-width: var(--container-desktop) !important;
+            margin: 0 auto;
+            
+            &__wrapper {
+                width: 380px;
+                height: 323px !important;
+            }
+        }  
+
+       
+        .get_request__grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 29px;
+        }
+
+        .user_card {
+            max-width: 370px;
+        }
+}
+
+@media (max-width: $laptop) {
+
+        .container {
+            max-width: var(--container-laptop) ;
+            margin: 0 auto;
+            height: 60px;   
+        }
+
+        .header {
+            padding: 0 60px;
+            
+        }
+
+        .banner {
+            height: 650px;
+            font-weight: 400 ;
+
+            &__wrapper {
+                width: 380px;
+                height: 323px !important;
+            }
+        }
+
+
+        .get_request__grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 29px;
+            width: 904px !important;
+        }
+
+        .user_card {
+            max-width: 282px;
+        }
+}
+
+@media (max-width: 1023px) {
+    .get_request__grid {
+        grid-template-columns: repeat(2, 344px) ;
+        gap: 16px ;
+        max-width: 704px;
+    }
+
+    .user_card {
+        min-width: 344px !important;
+    }
+}
+
+@media (max-width: $tablet) {
+
+    .header {
+        padding: 0 32px;
+    }
+
+    .container {
+        max-width: var(--container-tablet) !important;
+        margin: 0 auto;
+        
+        }
+
+    .banner {
+        height: 500px !important;
+            
+            
+            &__wrapper {
+ 
+             max-width: 380px
+            }
+        }
+
+    .get_request__grid {
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 16px ;
+        max-width: 704px;
+    }
+
+    .user_card {
+        max-width: 344px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .get_request__grid {
+        max-width: 328px !important;
+        overflow: hidden !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px
+        
+    }
+}
+
+@media (max-width: $mobile) {
+    .container {
+        max-width: var(--container-mobile) !important;
+        margin: 0 auto;
+        overflow: hidden;
+        
+       
+    }
+
+    #header-mobile {
+        padding: 0 16px !important;
+        width: 100% ;
+    }
+
+    .banner {
+        max-height: 500px;
+        padding-top: 40px !important;
+        
+            &__wrapper {
+                height: 100%;
+                max-width: 328px
+            }
+    }
+
+    .get_request__grid {
+        max-width: 328px !important;
+        overflow: hidden !important;
+        grid-template-rows: repeat(6, 254px);
+        gap: 20px
+        
+    }
+
+    .user_card {
+        max-width: 328px;
+    }
+}

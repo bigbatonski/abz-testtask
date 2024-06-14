@@ -1,0 +1,170 @@
+//POST SECTION
+.post_user {
+    text-align: center;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 567px;
+    align-items: left;
+    gap: 50px;
+    margin: 50px auto;
+    text-align: left;
+
+        &__input_wrapper {
+            position: relative;
+            
+        }
+        
+        //Phone input
+        &__input_wrapper:last-of-type::after {
+                content: "+38 (XXX) XXX - XX - XX";
+                font-size: 12px;
+                display: block;
+                position: absolute;
+                bottom: -18px;
+                left: 16px;
+                line-height: 14px;
+                z-index: 1000;
+                color: #d0cfcf;
+
+        }
+
+
+   
+        &__label{
+
+            position: absolute;
+            top: -6px;
+            left: 14px;
+            line-height: 1;
+            font-size: 12px;
+            padding: 0 4px;
+            z-index: 100;
+            background-color: #f8f8f8;
+            color: #d0cfcf;
+        }
+
+        &__text_input {
+            width: 100%;
+            min-height: 54px;
+            padding-left: 16px;
+            border-radius: var(--regular-border-radius);
+            border: 1px solid #d0cfcf;
+            position: relative;
+            background-color: #f8f8f8;
+        }
+
+        &__file_input {
+            width: 100%;
+            min-height: 54px;
+            border-radius: var(--regular-border-radius);
+            border: 1px solid #d0cfcf;
+            position: relative;
+            background-color: #f8f8f8;
+            display: flex;
+            position: relative;
+
+            &__button {
+                display: block;
+                text-align: center;
+                width: 83px;
+                border: 1px solid black;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input {
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                }
+
+            &__file_name {
+                color: #d0cfcf;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 16px;
+            }
+        }
+
+        
+
+        &__radio_input[type=radio] {
+            appearance:none;    
+        }
+
+        &__radio_input:checked + &__custom_checkbox::before {
+            opacity: 1;
+        }
+        
+        
+        &__radio_label {
+            position: relative;
+            display: flex;
+            margin-top: 7px;
+    
+        }
+        
+        &__custom_checkbox {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 1px solid var(--secondary-color);
+            border-radius: 100%;
+            position: relative;
+            margin-right: 12px;
+        }
+
+        &__custom_checkbox::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: var(--secondary-color);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            opacity: 0;
+        }
+
+        p {
+            margin-bottom: 11px;
+        }
+
+        .error_message {
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 16px;
+            z-index: 100;
+            font-size: 12px;
+            color: red;
+        }
+        
+        .error_message_input {
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 16px;
+            z-index: 1000;
+            font-size: 12px;
+            color: red;
+        }
+
+        .input_wrapper {
+            position: relative;
+        }
+       
+}
