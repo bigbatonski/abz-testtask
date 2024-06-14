@@ -1,8 +1,9 @@
 import Button from "../UI/Button"
-
+import background from "../../images/BG_Main.webp"
  function Baner() {
   return (
     <div className='banner center-flex'>
+      <img src={background} alt="main background" className="banner__background" fetchpriority="high" />
         <div className="banner__wrapper">
           <div>
               <h1>Test assignment for front-end developer</h1>
